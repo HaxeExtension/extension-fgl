@@ -1,6 +1,6 @@
 {
-        "name": "openfl-fgl",
-        "url": "https://github.com/fbricker/openfl-fgl",
+        "name": "extension-fgl",
+        "url": "https://github.com/sempaigames/extension-fgl",
         "license": "GPL",
         "contributors":["fbricker"],
         "tags": ["ads","api","adsorb","fgl"],
