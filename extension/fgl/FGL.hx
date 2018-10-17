@@ -1,10 +1,18 @@
 package extension.fgl;
 
+#if android
+#if (openfl < "4.0.0")
+import openfl.utils.JNI;
+#else
+import lime.system.JNI;
+#end
+#end
+
 class FGL {
 	////////////////////////////////////////////////////////////////////////////	
 	private static var __showAd:Void->Void = 
 		#if android
-			openfl.utils.JNI.createStaticMethod("lime/extension/fgl/FGL", "showAd", "()V");
+			JNI.createStaticMethod("lime/extension/fgl/FGL", "showAd", "()V");
 		#else
 			function(){};
 		#end
